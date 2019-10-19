@@ -55,5 +55,6 @@ end
 execute 'freshclam' do
   command 'freshclam'
   creates ::File.join(node['clamav']['database_directory'], 'daily.cvd')
+  ignore_failure node['clamav']['freshclam']['ignore_failure']
   not_if { node['clamav']['freshclam']['skip_initial_run'] }
 end

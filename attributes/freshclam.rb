@@ -70,3 +70,4 @@ default['clamav']['freshclam']['extra_databases'] = []
 # Other
 default['clamav']['freshclam']['rhel_cron_disable'] = true
 default['clamav']['freshclam']['skip_initial_run'] = false
+default['clamav']['freshclam']['ignore_failure'] = false
