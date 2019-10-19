@@ -8,13 +8,13 @@ description       'Installs/configures ClamAV'
 long_description  'Installs/configures ClamAV'
 version           '1.3.0'
 
-depends           'logrotate', '~> 1.0'
-depends           'yum', '~> 3.0'
-depends           'yum-epel', '~> 0.2'
-depends           'apt', '~> 2.1'
+depends           'logrotate'
+depends           'yum'
+depends           'yum-epel'
+depends           'apt'
 # Note that a breaking bug was introduced in 1.3.10 and fixed in 1.3.12, but
 # we really don't want a ">=" cookbook dep situation here
-depends           'cron', '~> 1.2'
+depends           'cron'
 
 supports          'ubuntu'
 supports          'debian'
